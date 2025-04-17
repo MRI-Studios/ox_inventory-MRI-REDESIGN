@@ -26,26 +26,6 @@ Os itens no inventário podem ter diferentes níveis de raridade, cada um podend
 
 ---
 
-## 🛠 Criando um Item com Raridade
-Para adicionar um item com raridade, defina o campo `metadata` no arquivo `items.lua`.
-
-### Exemplo de item com raridade pré-definida:
-```lua
-['diamond_ring'] = {
-    label = 'Anel de Diamante',
-    weight = 200,
-    stack = false,
-    close = true,
-    description = 'Um anel feito de diamante puro.',
-    metadata = {
-        rarity = 'legendary' -- Define a raridade do item
-    }
-}
-```
-📌 Isso significa que qualquer "diamond_ring" criado no jogo já terá a raridade `legendary`.
-
----
-
 ## 🛒 Criando Lojas que Vendem Itens com Raridade
 Para vender um item com raridade pré-definida, adicione a chave `metadata` na configuração da loja.
 
